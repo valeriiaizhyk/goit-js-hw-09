@@ -26,10 +26,16 @@ a {
 
 button {
   cursor: pointer;
+  font-family: inherit;
 }
 
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+}
+
+input,
+textarea {
+  padding: 0;
+  resize: none;
 }
