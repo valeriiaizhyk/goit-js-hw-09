@@ -73,11 +73,10 @@ galleryList.innerHTML = images.reduce(
   (acc, { preview, original, description }) =>
     acc +
     `<li class="gallery-item">
-        <a class="gallery-link" href="${item.original}">
+        <a class="gallery-link" href="${original}">
             <img 
             class="gallery-image" 
             src="${preview}" 
-            data-source="${original}" 
             alt="${description}"
             width="360"
             height="200" />
