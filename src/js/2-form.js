@@ -6,7 +6,7 @@ const input = feedbackForm.elements.email;
 
 const textarea = feedbackForm.elements.message;
 
-const storageValue = lokalStorage.getItem(keyForStorage);
+const storageValue = localStorage.getItem(keyForStorage);
 
 if (storageValue) {
   try {
@@ -28,7 +28,7 @@ feedbackForm.addEventListener('input', () => {
     message: textarea.value.trim(),
   };
 
-  lokalStorage.setItem(keyForStorage, JSON.stringify(feedback));
+  localStorage.setItem(keyForStorage, JSON.stringify(feedback));
 });
 
 feedbackForm.addEventListener('submit', e => {
